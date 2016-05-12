@@ -1,3 +1,44 @@
-.container-skills {
- background-color: white;
+.wrapper-skills {
+
 }
+
+.box-skills {
+ margin: 0 auto;
+  max-width: 900px;
+ background-color: red;
+  padding: 40px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.icons a {
+  color: white;
+  opacity: .5;
+
+  &:hover {
+    opacity: .7;
+    color: white;
+  }
+}
+
+.skills-ul {
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 5px 0;
+    opacity: .5;
+  }
+}
+
+// .box-skills {
+//   margin: 0 auto;
+//   max-width: 900px;
+//  background-color: #F5F5F5;
+//   padding: 40px;
+//   border-radius: 4px;
+//   text-align: center;
+//   margin-bottom: 30px;
+
+// }

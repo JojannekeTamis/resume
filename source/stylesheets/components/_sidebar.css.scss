@@ -1,6 +1,6 @@
 
 #menu-bars:hover {
-color: #FA8258;
+color: #4297e6;
 }
 
 #sidebar {
@@ -9,12 +9,13 @@ color: #FA8258;
   left: 0px;
   top: 0px;
   bottom: 0px;
-  width: 180px;
+  width: 200px;
   text-align: center;
   background-color: rgba(245, 245, 245, 0);
   transform: translateX(-100%);
   transition: 0.2s;
   z-index: 999;
+  background: white;
 }
 
 #sidebar i {
@@ -49,11 +50,24 @@ h6 {
 }
 
 #menu-close:hover {
-color: #FA8258;
+color: #4297e6;
 }
 
 #sidebar h6:hover {
-color: #FA8258;
+color: #4297e6;
+}
+
+.wrapper-home {
+  transform: translateX(0px);
+  transition: transform .2s ease;
+}
+
+body.has-sidebar-opened {
+  overflow-x: hidden;
+
+  .wrapper-home {
+    transform: translateX(200px)
+  }
 }
 
 // #sidebar {
@@ -72,8 +86,6 @@ color: #FA8258;
 //     overflow-y: auto;
 //     -webkit-overflow-scrolling: touch;
 // }
-
-
 
 
 

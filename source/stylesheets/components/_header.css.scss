@@ -15,6 +15,75 @@
 // }
 
 
+// $bg : #74F3C5;
+// $menu-color: white;
+// $snappy : cubic-bezier(0.694,  0.048, 0.335, 1.000);
+
+// body {
+//   background-color: $bg;
+// }
+
+// .menu-container {
+//   @include align();
+//   .bars {
+//     width: 120px;
+//     height: 70px;
+//     position: relative;
+//     transition: transform 0.3s $snappy;
+//     // border: 1px solid white;
+//     span {
+//       display: block;
+//       width: 100%;
+//       height: 10px;
+//       background-color: $red;
+//       margin-top: 20px;
+//       &:first-child {
+//         margin-top: 0;
+//         transform: scaleX(1);
+//         transition: transform 0.2s $snappy;
+//         transition-delay: 0.4s;
+//       }
+//       &:nth-child(3) {
+//         width: 100%;
+//         transition: width 0.2s $snappy;
+//         transition-delay: 0.4s;
+//       }
+//     }
+//     .other-bar {
+//       width: 10px;
+//       height: 0;
+//       background-color: $menu-color;
+//       position: absolute;
+//       top: -23px;
+//       left: 50%;
+//       margin-left: -5px;
+//       transition: height 0.4s $snappy;
+//       z-index: 10;
+//     }
+//   }
+//   &.is-menu-open {
+//     .bars {
+//       transform: rotate(45deg);
+//       transition-delay: 0.4s;
+//       span {
+//         &:first-child {
+//           transform: scaleX(0);
+//           transition: transform 0.2s $snappy;
+//         }
+//         &:nth-child(3) {
+//           width: 0;
+//           transition: width 0.2s $snappy;
+//         }
+//       }
+//       .other-bar {
+//         height: 120px;
+//         transition: height 0.2s $snappy;
+//         transition-delay: 0.3s;
+//       }
+//     }
+//   }
+// }
+
 
 .banner {
   color: white;
@@ -28,6 +97,7 @@
   height: 730px;
   width: 100%;
   position: relative;
+  background-attachment: fixed;
   // opacity: 0.8;
 }
 
@@ -43,7 +113,6 @@
   font-size: 25px;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 50px;
-  border: 3px solid white;
   padding-bottom: 15px;
 }
 
