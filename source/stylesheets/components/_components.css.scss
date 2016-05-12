@@ -80,54 +80,5 @@ margin: 0 auto;
   padding-top: 4em;
   padding-bottom: 4em;
 }
-.card {
-  height: 300px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  background-size: cover !important;
-  color: white;
-  position: relative;
-  margin-bottom: 40px;
-}
-
-.card-link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index:2;
-  background: black;
-  opacity: 0;
-}
-.card-link:hover{
-  opacity: 0.1;
-}
-
-.card-hover {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #182e3d;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  padding: 20px;
-  h2 {
-    text-align: center;
-    color: white;
-    opacity: 1;
-  }
-  p {
-    text-align: center;
-    color: white;
-    padding-right: 20px;
-    padding-left: 20px;
-  // color: rgba(255, 255, 255, 0.8);
-  }
-}
-
-.card:hover .card-hover {
-  opacity: 0.7;
-}
 
 
